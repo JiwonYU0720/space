@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>homework</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        #star{width:20px ;position: absolute; left: -200px; top: -200px}
+        body,nav,section{margin: 0; padding: 0 ;text-align: center; font-family: 'Gowun Batang', serif; background: black;}
+        .j{width: 300px; height: auto; position: absolute; left:100px; padding-top: 550px}
+        .E{width: 300px; height: auto; position: absolute; left:1500px; padding-top: 200px}
+        .S{width: 300px; height: auto; position: absolute; left:200px; padding-top: 100px}
+        .station{width: 300px; height: auto; position: absolute; left:1000px; padding-top: 700px}
+        .A{width: 200px; height: auto; position: absolute; left:900px; padding-top: 50px}
+        .groot{width: 200px; height: auto; position: absolute; left:1600px; padding-top: 600px}
+        .ment{padding-top: 350px; font-size: 2rem; color: white;text-shadow: 0px 0px 10px gold;}
+        .ment2{ font-size: 1.5rem; color: pink;text-shadow: 0px 0px 10px pink;}
+    </style>
+</head>
+<body>
+    <img src="star.png" id="star">
+    <script type="text/javascript">
+        var t = setInterval(makeStar, 1000);
+
+        function makeStar(){
+    let x = Math.random()*(window.innerWidth - 100);
+    let y = Math.random()*(window.innerHeight - 106);
+    let d = document.getElementById("star");
+    let a = d.cloneNode(true);
+    a.style.left = x + "px";
+    a.style.top = y + "px";
+    document.body.appendChild(a);
+    console.log(x,y);}
+</script>
+    <img class="station" src="station.png">
+    <img class="A" src="A.png">
+    <img class="groot" src="groot.png">
+    <a href="story1.html" >
+            <img class="j" src="j.png"></a>
+
+    <a href="story3.html" >
+            <img class="E" src="E.png"></a>
+
+    <a href="story2.html" >
+            <img class="S" src="S.png"></a>
+
+        <div class="ment">
+        <h2>우주 속에 행성들을 클릭해보세요!<br>
+        혹시 모르죠... 새로운 세상이 펼쳐질지도?</h2></div>
+        <div class="ment2">
+        <h3>주의! 행.성.만 클릭이 가능해요!</h3>
+    </div>
+</body>
+</html>
